@@ -4,184 +4,305 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portafolio Website</title>
-        <link rel = "stylesheet" href="style.css"> 
-        <script src="https://kit.fontawesome.com/bc93a79fb1.js" crossorigin="anonymous"></script>
+        <title>Portafolio Personal</title>
+        <!-- ===== CSS FILES ===== -->
+        <link rel = "stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/skins/color-1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     </head>
     <body>
-        <div id="header">
-          <div class="container">
-            <nav>
-                <img src="images/gammLogo.png" alt="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Inicio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <!-- ===== Main Container Start ===== -->
+        <div class="main-container">
+            <!-- ===== Aside Start ===== -->
+            <div class="aside">
+                <div class="logo">
+                    <a href="#"><span>A</span>tlas</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> About </a></li>
+                    <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Jhonatan</span><br> Mantilla from Peru</h1>
             </div>
-          </div>  
+            <!-- ===== Aside End ===== -->
+            <!-- ===== Main Content Start ===== -->
+            <div class="main-content">
+                <!-- ===== Home Section Start ===== -->
+                <section class="home section hidden">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Hello, my name is <span class="name">Jhonatan Mantilla</span></h3>
+                                <h3 class="my-profession">I' a <span class="typing">Web designer</span></h3>
+                                <p>I'm a web designer with extensive experience for over 10 years. My expertise is to create and website design, graphic design, and any more...</p>
+                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                            </div>
+                            <div class="home-img padd-15">
+                                <img src="images/hero.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Home Section End ===== -->
+                <!-- ===== About Section Start ===== -->
+                <section class="about section hidden">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>About Me</h2>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text padd-15">
+                                        <h3>I'm Jhonatan Mantilla and <span>Web Developer</span></h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga a vel quos, distinctio harum molestiae dolor repellendus ratione est obcaecati quibusdam tempore. Suscipit nobis aliquam quae nam in, repudiandae deleniti.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Birthday : <span>19 mar 1995</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Age : <span>28</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Website : <span>www.domain.com</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Email : <span>jhonatamm.1995@gmail.com</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Degree : <span>CS</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Phone : <span>+51 950 212 908</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>City : <span>Trujillo</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Freelance : <span>Available</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="#" class="btn"> Download CV</a>
+                                                <a href="#contact" class="btn hire-me">Hire me</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skills padd-15">
+                                        <div class="row">
+                                            <div class="skill-item padd-15">
+                                                <h5>Java</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 86%;"></div>
+                                                    <div class="skill-percent">86%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>CSS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 76%;"></div>
+                                                    <div class="skill-percent">76%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>PHP</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 66%;"></div>
+                                                    <div class="skill-percent">66%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item padd-15">
+                                                <h5>HTML</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 96%;"></div>
+                                                    <div class="skill-percent">96%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="education padd-15">
+                                        <h3 class="title">Education</h3>
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- ====== timeline item ===== -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div><div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div><div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="experience padd-15">
+                                        <h3 class="title">Experience</h3>
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- ====== timeline item ===== -->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div><div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div><div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        </h3>
+                                                        <h4 class="timeline-title">Master in Computer Science</h4>
+                                                        <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quam doloribus libero, veniam aut rerum porro laboriosam? Minima nostrum tempora nulla, mollitia ipsum sed ab! Deserunt quisquam dicta neque accusantium?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== About Section End ===== -->
+                <!-- ===== Service Section Start ===== -->
+                <section class="service section hidden">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Services</h2>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-mobile-alt"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-palette"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                            <!-- ===== Service Item End ===== -->
+                            <!-- ===== Service Item Start ===== -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-bullhorn"></i>
+                                    </div>
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas maiores pariatur earum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Service Section End ===== -->
+                <!-- ===== Portfolio Section Start ===== -->
+                <section class="portfolio section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Portfolio</h2>
+                            </div>   
+                        </div>
+                        <div class="row">
+                            <div class="portfolio-heading padd-15">
+                                <h2>My Last Proyects :</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Portfolio Section End ===== -->
+            </div>
+            <!-- ===== Main Content End ===== -->
         </div>
-        <!-- -------------- about ------------>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/user.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>Mi nombre es Jhonatan Mantilla, soy ingeniero de minas y apasionado por la programación. Me gustaría ser </p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span>Web Development</span><br>Web App Development</li>
-                                <li><span>App Development</span><br>Building Android/IOS Apps</li>
-                           </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                                <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
-                                <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                                <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
-                           </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                                <li><span>2016</span><br>MBA from MIT Bangalore</li>
-                                <li><span>2014</span><br>BBA from ISM Bangalore</li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!---------services----------------->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>Descripcion</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Descripcion</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h2>App Design</h2>
-                        <p>Descripcion</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- portfolio -->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">Mis Proyectos</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/work-1.jpg">
-                        <div class="layer">
-                            <h3>Contrata Minera Java Desktop Application</h3>
-                            <p>Administrative management and operations control program for contract mining: Registration of workers, entry of fuel vouchers, reports, etc.</p>
-                            <a href="https://github.com/GAMM95/Mine_contract"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-2.png">
-                        <div class="layer">
-                            <h3>Music App</h3>
-                            <p>The app connects you ......</p>
-                            <a href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/work-3.png">
-                        <div class="layer">
-                            <h3>Online Shopping App</h3>
-                            <p>The app connects you ......</p>
-                            <a href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">Ver más</a>
-            </div>
-        </div>
-        <!-- Contact-->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contáctame</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>jhonatanmm.1995@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>(+51) 950 212 908</p>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/jhonatan.mantilla.1995/"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://www.instagram.com/jhonatanmm1995/"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/jhonatan-mantilla-mi%C3%B1ano-19031995/"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                       <a href="images/CV-MANTILLA MIÑANO.pdf" download class="btn btn2">Descargar CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form action="https://formsubmit.co/c6aa42594c51ba45a67610af107a0671 " method="POST">
-                            <input type="text" name="name" placeholder="Tu nombre" required>
-                            <input type="email" name="email" placeholder="Tu email" required>
-                            <textarea name="Message" rows="6" placeholder="Tu mensaje"></textarea>
-                            <button type="submit" class="btn btn2">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Todos los derechos reservados. Hecho con <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
-            </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents= document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }               
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200px";
-            }
-        </script>
-        
-    </body>
-</html>
+        <!-- ===== Main Container End ===== -->
+        <!-- ===== JS FILES ===== -->
+        <script src="js/script.js"></script>
+    </body>     
+    </html>

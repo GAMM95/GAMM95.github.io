@@ -45,6 +45,7 @@ ul{
     z-index: 0;
     overflow-y: auto;
     overflow-y: hidden;
+    transition: all 0.3s ease;
 }
 .section.back-section{
     z-index: 1;
@@ -147,6 +148,7 @@ ul{
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 .aside .logo{
     position: absolute;
@@ -199,6 +201,7 @@ ul{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 .aside .nav-toggler span{
     height: 2px;
@@ -650,6 +653,9 @@ h3.hello span{
     }
     .section{
         left: 0;
+    }
+    .section.open{
+        left: 270px;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;

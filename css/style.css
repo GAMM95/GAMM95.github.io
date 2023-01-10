@@ -638,8 +638,18 @@ h3.hello span{
     .aside{
         left: -270px;
     }
+    .aside.open{
+        left: 0;
+    }
     .aside .nav-toggler{
         display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+    .section{
+        left: 0;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;

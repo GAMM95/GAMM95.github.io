@@ -1,8 +1,8 @@
 /* ========= typing animation =========== */
 var typed = new Typed(".typing",{
-    strings:[" ","Web Designer","Web Developer","Graphic Designer","Youtuber"],
-    typeSpeed: 100,
-    backSpeed: 60,
+    strings:["","Web Designer","Web Developer","Graphic Designer","Youtuber"],
+    typeSpeed: 80,
+    backSpeed: 50,
     loop: true
 })
 /* ========= Aside =========== */
@@ -18,9 +18,9 @@ const nav = document.querySelector(".nav"),
         {
             for(let i=0; i<totalSection; i++)
             {
-            allSection[i].classList.remove("back-section");
+                allSection[i].classList.remove("back-section");
             }
-            for(let j=0;j<totalNavList; j++)
+            for(let j=0; j<totalNavList; j++)
             {
                 if(navList[j].querySelector("a").classList.contains("active"))
                 {
@@ -30,6 +30,10 @@ const nav = document.querySelector(".nav"),
             }
             this.classList.add("active")
             showSection(this);
+            if(window.innerWidth < 1200)
+            {
+                asideSectionTogglerBtn();
+            }
         })
     }
     function showSection(element)
@@ -41,6 +45,10 @@ const nav = document.querySelector(".nav"),
         const target = element.getAttribute("href").split("#")[1];
         document.querySelector("#" + target).classList.add("active")
     }
+    document.querySelector(".hire-me").addEventListener("click",function()
+    {
+        
+    })
     const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
     navTogglerBtn.addEventListener("click", () =>

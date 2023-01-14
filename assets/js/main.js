@@ -173,7 +173,3 @@ function navHighlighter() {
 }
 
 /*=============== SHOW SCROLL UP ===============*/
-function CopiarEnlace(){
-    var Enlace = document.getElementById("enlace").getAttribute("href");
-    document.getElementById("copiado").innerHTML = Enlace;
-    }

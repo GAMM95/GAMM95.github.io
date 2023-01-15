@@ -183,6 +183,9 @@ function sendMail() {
     const serviceID = "service_2aco0hg";
     const templateID = "template_4ojn6tf"
 
+    if(name ==='' || email === '' || message ==='') {
+        
+    }else {
     emailjs
     .send(serviceID,templateID,params)
     .then((res) => {
@@ -190,9 +193,10 @@ function sendMail() {
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("your message sent succesfully");
+        alert("Your message sent succesfully");
     })
     .catch((err) => console.log(err));
+    }
 }
 
 

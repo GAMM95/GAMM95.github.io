@@ -16,6 +16,15 @@
     <!-- =============== MAIN CSS =============== -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("I95TsA84ROWVMaiGq");
+            })();
+        </script>
+
     <title>GAMM95 Personal Portfolio</title>
 </head>
 <body>
@@ -792,27 +801,25 @@
                 <div class="contact__content">
                     <form action="" class="contact__form" id="contact__form">
                         <div class="input__container">
-                            <input type="text" class="input" name="name" id="contact__username">
+                            <input type="text" class="input" id="name">
                             <label for="">Username</label>
                             <span>Username</span>
                         </div>
                         <div class="input__container">
-                            <input type="email" class="input" name="email" id="contact__email">
+                            <input type="email" class="input" id="email">
                             <label for="">Email</label>
                             <span>Email</span>
                         </div>
-                        <div class="input__container">
-                            <input type="sub" class="input" name="subject" id="contact__subject">
-                            <label for="">Subject</label>
-                            <span>Subject</span>
-                        </div>
                         <div class="input__container textarea">
-                            <textarea name="" id="message" rows="6"  name="message" class="input"></textarea>
+                            <textarea name="" id="message" rows="6"  class="input"></textarea>
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
-                        <p class="contact__message" id="contact__message">Message</p>
-                        <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i>
+                       <!-- <div class="input__container">
+                            <p class="contact__message" id="contact__message">Message</p>
+                        </div>-->
+                            
+                        <button type="submit" class="button" onclick="sendMail()"><i class="uil uil-navigator button__icon"></i>
                             Send Message
                         </button>
                     </form>
@@ -866,7 +873,8 @@
         <script src="assets/js/mixitup.min.js"></script>
 
         <!-- =============== EMAIL JS =============== -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>-->
+        
 
         <!-- =============== SWIPER JS =============== -->
         <script src="assets/js/swiper-bundle.min.js"></script>

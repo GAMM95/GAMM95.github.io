@@ -183,19 +183,19 @@ function sendMail() {
     const serviceID = "service_2aco0hg";
     const templateID = "template_4ojn6tf"
 
-    if(name ==='' || email === '' || message ==='') {
-        
-    }else {
-    emailjs
-    .send(serviceID,templateID,params)
-    .then((res) => {
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-        console.log(res);
-        alert("Your message sent succesfully");
-    })
-    .catch((err) => console.log(err));
+    if(document.getElementById("name").value === '' || document.getElementById("email").value === '' || document.getElementById("message").value === '') {
+        /*alert("Complete fields"); */
+    } else {
+        emailjs
+        .send(serviceID,templateID,params)
+        .then((res) => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent succesfully");
+        })
+        .catch((err) => console.log(err));
     }
 }
 

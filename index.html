@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <img src="assets/img/home-img.png" alt="" class="home__img">
+                <img src="assets/img/Perfil-removebg-PhotoRoom.png" alt="" class="home__img">
                 <div class="home__data">
                     <h1 class="home__title">Hello, I'm Jhonatan Mantilla</h1>
                     <h3 class="home__subtitle">Full-Stack Developer</h3>
@@ -133,7 +133,7 @@
             <h2 data-heading="My Info" class="section__title">About Me</h2>
        
             <div class="about__container container grid">
-                <img src="assets/img/about-img.jpg" alt="" class="about__img">
+                <img src="assets/img/Perfil-removebg-PhotoRoom.png" alt="" class="about__img">
             
                 <div class="about__data">
                     <h3 class="about__heading">Hi, I'm Jhonatan Mantilla</h3>
@@ -790,27 +790,28 @@
                 </div>
 
                 <div class="contact__content">
-                    <form action="" class="contact__form">
+                    <form action="" class="contact__form" id="contact__form">
                         <div class="input__container">
-                            <input type="text" class="input">
+                            <input type="text" class="input" name="name" id="contact__username">
                             <label for="">Username</label>
                             <span>Username</span>
                         </div>
                         <div class="input__container">
-                            <input type="email" class="input">
+                            <input type="email" class="input" name="email" id="contact__email">
                             <label for="">Email</label>
                             <span>Email</span>
                         </div>
                         <div class="input__container">
-                            <input type="tel" class="input">
-                            <label for="">Phone</label>
-                            <span>Phone</span>
+                            <input type="sub" class="input" name="subject" id="contact__subject">
+                            <label for="">Subject</label>
+                            <span>Subject</span>
                         </div>
                         <div class="input__container textarea">
-                            <textarea name="" id="" class="input"></textarea>
+                            <textarea name="" id="message" rows="6"  name="message" class="input"></textarea>
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
+                        <p class="contact__message" id="contact__message">Message</p>
                         <button type="submit" class="button"><i class="uil uil-navigator button__icon"></i>
                             Send Message
                         </button>
@@ -863,6 +864,9 @@
 
         <!-- =============== MIXITUP FILTER =============== -->
         <script src="assets/js/mixitup.min.js"></script>
+
+        <!-- =============== EMAIL JS =============== -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
         <!-- =============== SWIPER JS =============== -->
         <script src="assets/js/swiper-bundle.min.js"></script>

@@ -260,7 +260,7 @@ input {
 
 /* ===== Home Section ===== */
 .home {
-    background: url('../img/home-bg.jpg');
+    background: url('../img/home-bg1.jpg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -980,6 +980,13 @@ input {
 .contact__card-data {
     display: block;
     margin-bottom: var(--mb-0-75);
+}
+
+.contact__message{ 
+    position: absolute;
+    bottom: 33%;
+    left: 0;
+    font-size: var(--small-font-size);
 }
 
 .contact__button {
